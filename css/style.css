@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap");
+body {
+  font-size: 18px;
+}
+body header {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body header .logo {
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+body header nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Barlow", serif;
+}
+body header nav ul li:last-child {
+  color: black;
+  background-color: hsl(0, 0%, 100%);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+body header nav ul li:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 767px) {
+  body header nav ul li:last-child:hover {
+    background-color: hsl(51, 100%, 49%);
+    color: black;
+  }
+}
+@media (max-width: 767px) {
+  body header nav ul li:last-child {
+    background-color: hsl(51, 100%, 49%);
+    color: black;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  body header nav ul li {
+    display: block;
+    margin-inline: auto;
+    visibility: hidden;
+    color: hsl(232, 10%, 55%);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body header nav ul {
+    transition: all ease 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  body header nav {
+    position: absolute;
+    right: 59px;
+    top: 15%;
+    height: 0;
+    transition: all ease 0.3s;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 10;
+  }
+}
+body header nav:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -18px;
+  right: 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+}
+body header .icon-hamburger {
+  cursor: pointer;
+}
+body header .active-nav {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body header .active-nav ul {
+  margin: 25px 60px;
+}
+body header .active-nav ul li {
+  visibility: visible;
+}
+body header .active-nav:after {
+  content: "";
+  border-width: 10px;
+}
+body header .header-containt {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+}
+body header .header-containt h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 8px;
+}
+@media (max-width: 767px) {
+  body header .header-containt h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 540px) {
+  body header .header-containt h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 540px) {
+  body header .header-containt {
+    left: 30%;
+    transform: translateX(-30%);
+  }
+}
+body header i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 150px;
+  color: hsl(0, 0%, 100%);
+}
+body #art .containt {
+  background-color: hsl(0, 0%, 100%);
+}
+body #art .containt h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 38px;
+}
+@media (max-width: 767px) {
+  body #art .containt h3 {
+    font-size: 25px;
+    margin-block: 20px;
+  }
+}
+body #art .containt p {
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+body #art .containt a {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+body #art .containt a span {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+body #art .containt a span::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+}
+body #art .containt.art-1 a span::after {
+  content: "";
+  background-color: hsl(51, 100%, 49%);
+}
+body #art .containt.art-2 a span::after {
+  content: "";
+  background-color: hsl(7, 99%, 70%);
+}
+@media (max-width: 767px) {
+  body #art .containt {
+    height: 60vh;
+  }
+}
+body #art .two-images .containt {
+  background-color: transparent;
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  text-align: center;
+}
+body #testimonials .header {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+@media (max-width: 767px) {
+  body #testimonials .header {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 540px) {
+  body #testimonials .header {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+body #testimonials .testimonial .image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+body #testimonials .testimonial .containt p {
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(213, 9%, 39%);
+  width: 80%;
+}
+body #testimonials .testimonial .containt .information h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+body #testimonials .testimonial .containt .information p {
+  color: hsl(210, 4%, 67%);
+}
+body #sub-footer .image {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+body #sub-footer .image-1 {
+  background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+}
+body #sub-footer .image-2 {
+  background-image: url("../images/desktop/image-gallery-orange.jpg");
+}
+body #sub-footer .image-3 {
+  background-image: url("../images/desktop/image-gallery-cone.jpg");
+}
+body #sub-footer .image-4 {
+  background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+}
+body #footer {
+  background-color: hsl(168, 34%, 41%);
+}
+body #footer .links a {
+  color: hsl(212, 27%, 19%);
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+body #footer .links a:hover {
+  color: hsl(0, 0%, 100%);
+}
+body #footer .social-icons i {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+body #footer .social-icons i:hover {
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */
